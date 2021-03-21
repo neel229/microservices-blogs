@@ -3,7 +3,7 @@
 module.exports = {
   url: `https://neel229.github.io/microservices-blogs/`,
   description: `Blogs for learning Microservices`,
-  pathPrefix: "/",
+  pathPrefix: "/microservices-blogs",
   title: `Let's learn Microservices, shall we?`,
   disqusShortname: "",
   postsPerPage: 15,
