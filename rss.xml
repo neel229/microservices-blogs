@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Let's learn Microservices, shall we?]]></title><description><![CDATA[Blogs for learning Microservices]]></description><link>https://neel229.github.io/microservices-blogs</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 09:01:36 GMT</lastBuildDate><item><title><![CDATA[About me]]></title><description><![CDATA[Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with…]]></description><link>https://neel229.github.io/microservices-blogs/pages/about/</link><guid isPermaLink="false">https://neel229.github.io/microservices-blogs/pages/about/</guid><content:encoded>&lt;p&gt;Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with specialization in AI and Machine Learning though I have no interest in neither AI nor Machine Learning.&lt;/p&gt;
+&lt;p&gt;My primary language for programming is Go. Talking about skills, I have experience working on projects which include the follwing technologies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go&lt;/li&gt;
+&lt;li&gt;Postgres&lt;/li&gt;
+&lt;li&gt;Docker (I am currently learning the advance features)&lt;/li&gt;
+&lt;li&gt;Github&lt;/li&gt;
+&lt;li&gt;Github Actions&lt;/li&gt;
+&lt;li&gt;Solidity (made a couple of dApps)&lt;/li&gt;
+&lt;li&gt;React.js&lt;/li&gt;
+&lt;li&gt;Svelte.js&lt;/li&gt;
+&lt;li&gt;RESTful services&lt;/li&gt;
+&lt;li&gt;gRPC&lt;/li&gt;
+&lt;li&gt;Unit Testing&lt;/li&gt;
+&lt;li&gt;Logging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;My current goals are to get better at creating platforms with microservices architecture and to become a good distributed engineer. I have also keen interest in blockchain technologies like Ethereum and Polkadot to name a few.&lt;/p&gt;</content:encoded></item></channel></rss>
