@@ -1,0 +1,5 @@
+name: Publish Blogs
+
+on:
+  push:
+    branches: []
