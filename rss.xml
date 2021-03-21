@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Let's learn Microservices, shall we?]]></title><description><![CDATA[Blogs for learning Microservices]]></description><link>https://neel229.github.io/microservices-blogs</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 09:20:41 GMT</lastBuildDate><item><title><![CDATA[About me]]></title><description><![CDATA[Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with…]]></description><link>https://neel229.github.io/microservices-blogs/pages/about/</link><guid isPermaLink="false">https://neel229.github.io/microservices-blogs/pages/about/</guid><content:encoded>&lt;p&gt;Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with specialization in AI and Machine Learning though I have no interest in neither AI nor Machine Learning.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Let's learn Microservices, shall we?]]></title><description><![CDATA[Blogs for learning Microservices]]></description><link>https://neel229.github.io/microservices-blogs</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 21 Mar 2021 10:36:22 GMT</lastBuildDate><item><title><![CDATA[About me]]></title><description><![CDATA[Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with…]]></description><link>https://neel229.github.io/microservices-blogs/pages/about/</link><guid isPermaLink="false">https://neel229.github.io/microservices-blogs/pages/about/</guid><content:encoded>&lt;p&gt;Hey folks, I am Neel Modi. I am a sophomore year university student from India. I am pursuing B.Tech (Bachelor’s) in Computer Science with specialization in AI and Machine Learning though I have no interest in neither AI nor Machine Learning.&lt;/p&gt;
 &lt;p&gt;My primary language for programming is Go. Talking about skills, I have experience working on projects which include the follwing technologies:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Go&lt;/li&gt;
@@ -14,4 +14,52 @@
 &lt;li&gt;Unit Testing&lt;/li&gt;
 &lt;li&gt;Logging&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;My current goals are to get better at creating platforms with microservices architecture and to become a good distributed engineer. I have also keen interest in blockchain technologies like Ethereum and Polkadot to name a few.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Testing]]></title><description><![CDATA[flsfjslk]]></description><link>https://neel229.github.io/microservices-blogs/blog/00/</link><guid isPermaLink="false">https://neel229.github.io/microservices-blogs/blog/00/</guid><pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;flsfjslk&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;My current goals are to get better at creating platforms with microservices architecture and to become a good distributed engineer. I have also keen interest in blockchain technologies like Ethereum and Polkadot to name a few.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[50,000 feet overview of Microservices]]></title><description><![CDATA[I am assuming that you have landed here for one of the following two reasons: To learn how to create applications with microservice…]]></description><link>https://neel229.github.io/microservices-blogs/blog/00/</link><guid isPermaLink="false">https://neel229.github.io/microservices-blogs/blog/00/</guid><pubDate>Sun, 21 Mar 2021 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;I am assuming that you have landed here for one of the following two reasons:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To learn how to create applications with microservice architecture&lt;/li&gt;
+&lt;li&gt;To sharpen your microservices skills a bit further&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So let’s cut chase right into the subject domain.&lt;/p&gt;
+&lt;h3&gt;The Crux of the Problem&lt;/h3&gt;
+&lt;p&gt;So far, you might have been developing monolithic applications in which everything is tightly-coupled. By tightly-coupled, what I am exactly meaning is that either everything will work or it won’t work at all. Even though some parts or most parts of your application might be working properly, the application as a whole won’t be working because of some silly error or a bug.&lt;/p&gt;
+&lt;p&gt;So what is our goal?
+Our goal is to make such a system whose various working parts are decoupled(separated) from one another and error in one part won’t cause the whole application to go down.&lt;/p&gt;
+&lt;h3&gt;The Solution&lt;/h3&gt;
+&lt;p&gt;The term ”&lt;strong&gt;Microservices&lt;/strong&gt;” was first used at a workshop for software architects back in 2011 but some companies were already working on something similar to it known as “SOA”. Though SOA is not 100% similar to Microservices but we can think of it as a subset of Microservices.&lt;/p&gt;
+&lt;p&gt;Microservice Architecture is a word you might be hearing in a day-to-day basis so let’s understand what it really means.&lt;/p&gt;
+&lt;p&gt;…First of all, there’s no concrete definition of what can be called a microservice architecture. But what we do know from examining the patterns followed at firms both large and small scale is that in microservice architecture, we create services which are small and are deployed independently. It is an approach to develop a suite of small services modeled around a business domain which can be deployed independently and are good at doing only one thing. Each of these services are running there own processes, have their own data storage, and communicate with other services via mechanisms like HTTP APIs and RPCs. One more thing to note about them is that they are automatically deployed using some CI/CD toolchain.&lt;/p&gt;
+&lt;p&gt;For example, one service might be used for keeping the items list, another for processing payments, one for shipping but as a whole, they form an e-commerce system. Take a look at the following diagram.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/02cd5/example.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 53.79746835443038%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC7UlEQVQoz5WSS2gTYRDHJ9vFB2LVqq0Kll4UET2o9FKo4EUQRRHUU/Eg+EB8gKIeCj6q+DpULSLBFK2PNtW2JiYmTTebTbZN0mKSNtmYZGva6mbzaJJNTPOwMaT93EQEQS8O/Jnh+2Z+zMz3Afxh38OEJMNrIBNQ1+Vj9Fw+SqN04MOGtHiWCxEY/K8JARWgLAWoMLTks6v7PDsmv5gKqSvjnApY36CE4WZxJpDHrewMjIynwT6R/RtSTJrxQmKowqORQXSAwIJ2QoJ6LbjzubzR86pnJ+IRjhgB9P4ceMNF8EXmwOxJgtX37d9AlBmB+RkrWN+2QdxIQZjoh5dXm9dwOi0RMRD63KCpOmhjwOqKLPMGC5e8ocIVs1uoHBaBjonMP4Azw83zKcuZUcWTqrjBsCdJU/tvnzyx/P71awCbtkAUIYnRLYAzhGqtbDIiKuaKoDpHoAjMuIClTUaImTpLk4qyAHwL6FFsUss73ku38jqdMkISpKfr9Vr0cRg27diBbd+8ufwYyEovcLx502STy4/m9P2LUCIKPdr+clNnTh8DhBhAszaAh7eOLb7d3LTw0L6dpbtSMdZYX/97ALy2ejUueonpcVt13EgqpklC3XXj+nqEEEilUjC+V4mMyyIwjyPELQDt23tAKlthY10N7N7VgC/dULnIr+yuCZOEKkjoBmiZrBb2klAC6N51Ar5uRTlW3r2zTqApVYTUK8xdj7bmpqmJ2egggskxOdhNMgh5+iSs94WYnC0XePt6j/A67eFSXFLvqwE43tr9a++sB5iXHYsTNHUwThkOuNXtVZxHcfarW3GjnDCXpCUoawb03bLyR3ywJRumzqEvIqg4BZ8d3KkpZ/Cm387XfPkUB87mlyC3Ez62PwXBREHUQIKt7zHwrBp4n+bXolJcP5bitKLXbEtyBBKmdAnG9GBNy4W2VXajK+Yy+9Co0dPAWMaBsbAY4r+Cs+MZiD8CEygDxmplEGQ/VAR8GvwnhLnDsgaYzF0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Project Architecture&quot;
+        title=&quot;Project Architecture&quot;
+        src=&quot;/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/f058b/example.png&quot;
+        srcset=&quot;/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/c26ae/example.png 158w,
+/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/6bdcf/example.png 315w,
+/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/f058b/example.png 630w,
+/microservices-blogs/static/31d38f261e97be9176aafcf9beb485fa/02cd5/example.png 821w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;You can see that we have 5 different services which as a whole constitute an e-commerce website.
+First we have users(on the right) where we are using CockroachDB to store their information. This is further connected to our OAuth service whose sole purpose is to verify the user. Don’t worry, we will be talking about the application in detail in further blogs and we will be also making one in Go but feel free to replicate it in your language of choice.&lt;/p&gt;
+&lt;p&gt;Microservices embrace the concept of information hiding. Information hiding is described as hiding as much information as possible inside a component and exposing as little as possible via external interfaces. This allows for clear separation between what can change easily and what is more difficult to change. And since from the outside, a service is seen as a black box, it can be written in any language of your choice. So one service might be written in Go and the other in Java and yet they can still communicate with each other via network endpoints. This also means that for a particular service, we can use a specific DB type at our advantage. In the example shown above, for Users service, we are using CockroachDB since it will help us with managing the relations. On the other hand, in the OAuth service, we are using a NoSQL database in Cassandra because it would be more beneficial for that particular business domain.&lt;/p&gt;
+&lt;p&gt;So now that we know what to expect when we are talking about microservices architecture, in the next blog, we will talk about how we will learn different technologies which will help us in creating microservices and later on in the series, we will be applying them to create a pizza-ordering platform.&lt;/p&gt;</content:encoded></item></channel></rss>
