@@ -7,7 +7,7 @@ module.exports = {
   title: `Let's learn Microservices, shall we?`,
   disqusShortname: "",
   postsPerPage: 15,
-  googleAnalyticsId: "",
+  googleAnalyticsId: "19260439",
   useKatex: false,
   author: {
     name: `Neel Modi`,
